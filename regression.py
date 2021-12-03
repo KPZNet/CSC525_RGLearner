@@ -33,6 +33,10 @@ absolute values.
 # Remember to update the script for the new data when you change this URL
 URL = "https://raw.githubusercontent.com/microsoft/python-sklearn-regression-cookiecutter/master/stockvalues.csv"
 
+from sklearn.datasets import load_boston
+boston_dataset = load_boston()
+
+
 # This is the column of the sample data to predict.
 # Try changing it to other integers between 1 and 155.
 TARGET_COLUMN = 32
